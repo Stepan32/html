@@ -1,0 +1,219 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#wrap {
+  width: 980px;
+  margin: 0 auto;
+
+  min-height: 100%;
+  position: relative;
+}
+#header {
+  height: 148px;
+background: white url("image/bg-hea.jpg") left top no-repeat;
+}
+#header .logo{
+  margin-top: 51px;
+  float: left;
+}
+#header .contacts {
+  margin-top: 25px;
+  float: right;
+  text-align: right;
+}
+#header .contacts p {
+  font: bold 18px/14px Arial;
+  color: black;
+}
+#header .contacts p .green {
+  font-size: 14px;
+  font-weight: normal;
+}
+#header .contacts p .gray {
+  font-size: 12px;
+  font-weight: normal;
+}
+/*Навигация*/
+#navigation {
+  height: 43px;
+  background: transparent url("image/bg-nav.png") repeat-x;
+  clear: both;
+}
+#navigation>ul {
+  height: 40px;
+}
+#navigation>ul>li {
+  float: left;
+  border-right: 1px solid #444;
+  list-style-type: none;
+  position: relative;
+}
+#navigation>ul>li>a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  line-height: 14px;
+  padding: 13px 23px;
+  border-right: 1px solid #333;
+}
+#navigation>ul>li:first-child>a {
+padding-left: 29px;
+}
+#navigation>ul>li>a:hover,
+#navigation>ul>li.active>a {
+  background-color: #333;
+  color: #76e16e;
+}
+/*Выпадающее меню*/
+#navigation>ul>li>ul {
+  width: 200px;
+  background-color: #333;
+  border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  position: absolute;
+  top: 40px;
+  overflow: hidden;
+  display: none;
+}
+#navigation>ul>li:hover>ul {
+  display: block;
+}
+#navigation>ul>li>ul>li {
+  list-style-type: none;
+}
+#navigation>ul>li>ul>li>a {
+  display: block;
+  font-size: 12px;
+  color: #eee;
+  padding: 10px 23px;
+  line-height: 12px;
+  border-top: 1px solid #444;
+  text-decoration: none;
+}
+#navigation>ul>li>ul>li>a:hover {
+  background-color: #222;
+}
+/*Подвал*/
+#footer {
+  background-color: white;
+  border-top: 3px solid #ddd;
+  height: 72px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#footer .left {
+  float: left;
+  margin-top: 29px;
+  font-size: 12px;
+  line-height: 12px;
+}
+#footer .left span {
+  margin-right: 97px;
+}
+#footer .left a {
+  font-weight: bold;
+  text-decoration: none;
+}
+#footer .left a+a {
+  margin-left: 17px;
+}
+#footer .count {
+  float: right;
+  margin-top: 19px;
+}
+body {
+  background: #fbf7f5 url ("image/bg.jpg") repeat;
+  font: 14px/22px Arial;
+  color: #444444;
+}
+a {
+  color: #0083df;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font: 26px/26px Arial;
+  margin-bottom: 20px;
+}
+h2 {
+  font: 22px/22px Arial;
+  margin-bottom: 20px;
+}
+p {
+  margin-bottom: 15px;
+}
+.green {
+  color: #1d8b15;
+}
+.gray {
+  color: #666666;
+
+}
+
+h1,h2 {
+  color: black;
+}
+.content {
+padding: 0 29px;
+}
+html,
+body {
+  height: 100%;
+}
+#content {
+  padding-bottom: 50px;
+}
+/*Левая колонка*/
+#lefcol {
+  width: 220px;
+  float: left;
+  padding: 3px 3px 4px;
+  margin-right: 18px;
+}
+.block {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+.block> .header {
+padding: 10px 10px 10px 35px;
+-webkit-border-radius: 3px 3px 0 0;
+-moz-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0;
+background-color: #41b039;
+background-position: 10px center;
+background-repeat: no-repeat;
+font: bold 16px/16px Arial;
+color: white;
+}
+.block> .content {
+  padding: 10px;
+}
+/*Корзина*/
+.block.basket>.header {
+  background-image: url("image/basket1.png");
+}
+.block.basket>.content p {
+  margin-bottom: 0;
+  line-height: 20px;
+}
+#content {
+  padding: 0 29px 102px;
+  overflow: hidden;
+  clear: both;
+  margin-top: 30px;
+}
+#main {
+  overflow: hidden;
+}
